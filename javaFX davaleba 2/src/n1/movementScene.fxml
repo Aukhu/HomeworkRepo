@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="N1.CircleController">
+    <children>
+        <ButtonBar layoutX="20.0" layoutY="160.0" prefHeight="125.0" prefWidth="85.0" />
+        <Button layoutY="148.0" mnemonicParsing="false" onAction="#left" prefHeight="105.0" prefWidth="85.0" text="Left">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="515.0" layoutY="148.0" mnemonicParsing="false" onAction="#right" prefHeight="105.0" prefWidth="85.0" text="Right">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="248.0" mnemonicParsing="false" onAction="#up" prefHeight="69.0" prefWidth="105.0" text="Up">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="248.0" layoutY="331.0" mnemonicParsing="false" onAction="#down" prefHeight="69.0" prefWidth="105.0" text="Down">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="300.0" layoutY="201.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" />
+        <Button layoutX="515.0" mnemonicParsing="false" onAction="#UR" prefHeight="69.0" prefWidth="85.0" text="UR">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#UL" prefHeight="69.0" prefWidth="85.0" text="UL">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutY="331.0" mnemonicParsing="false" onAction="#DL" prefHeight="69.0" prefWidth="85.0" text="DL">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="515.0" layoutY="331.0" mnemonicParsing="false" onAction="#DR" prefHeight="69.0" prefWidth="85.0" text="DR">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Button>
+        <Button layoutX="411.0" layoutY="2.0" mnemonicParsing="false" onAction="#turnRed" text="Red" textFill="RED">
+            <font>
+                <Font name="Calibri Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
