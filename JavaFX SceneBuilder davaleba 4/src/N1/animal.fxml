@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: 255,255,255;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="N1.AnimalController">
+    <children>
+        <RadioButton fx:id="cat" layoutX="374.0" layoutY="243.0" mnemonicParsing="false" onAction="#getResultInfo" prefWidth="171.0" text="Cat" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="type" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="dog" layoutX="374.0" layoutY="293.0" mnemonicParsing="false" onAction="#getResultInfo" prefWidth="171.0" text="Dog" textAlignment="CENTER" toggleGroup="$type">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rabbit" layoutX="374.0" layoutY="343.0" mnemonicParsing="false" onAction="#getResultInfo" prefWidth="171.0" text="Rabbit" textAlignment="CENTER" toggleGroup="$type">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="bird" layoutX="374.0" layoutY="393.0" mnemonicParsing="false" onAction="#getResultInfo" prefWidth="171.0" text="Bird" textAlignment="CENTER" toggleGroup="$type">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+        </RadioButton>
+        <TextField fx:id="nameField" layoutX="329.0" layoutY="471.0" onAction="#getResultInfo" prefHeight="86.0" prefWidth="343.0" promptText="Enter a Name">
+            <font>
+                <Font name="System Italic" size="25.0" />
+            </font>
+        </TextField>
+        <Label alignment="CENTER" layoutX="256.0" layoutY="59.0" prefHeight="95.0" prefWidth="488.0" text="Choose Your Animal" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="51.0" />
+            </font>
+        </Label>
+        <Label fx:id="label" alignment="CENTER" layoutY="605.0" prefHeight="112.0" prefWidth="1001.0" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="N2.GalleryController">
+    <children>
+        <ImageView fx:id="image" fitHeight="400.0" fitWidth="400.0" layoutX="300.0" layoutY="200.0" nodeOrientation="INHERIT" smooth="false" />
+        <Button fx:id="previousButton" contentDisplay="CENTER" layoutX="150.0" layoutY="366.0" mnemonicParsing="false" onAction="#previous" prefHeight="69.0" prefWidth="67.0" style="-fx-background-color: none;" text="&lt;" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Button>
+        <Button fx:id="nextButton" contentDisplay="CENTER" layoutX="750.0" layoutY="366.0" mnemonicParsing="false" onAction="#next" prefHeight="69.0" prefWidth="67.0" style="-fx-background-color: none;" text="&gt;" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
